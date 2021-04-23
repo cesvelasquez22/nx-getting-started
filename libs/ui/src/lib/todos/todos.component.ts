@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, Input, OnInit } from '@angular/core';
-import { ITodo } from '@myorg/data';
+import { ITodo, types } from '@myorg/data';
 
 @Component({
   selector: 'myorg-todos',
@@ -13,6 +13,8 @@ export class TodosComponent implements OnInit {
   constructor() {}
 
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    types();
+  }
 
 }

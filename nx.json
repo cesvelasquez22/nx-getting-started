@@ -25,6 +25,13 @@
     "todos-e2e": { "tags": [], "implicitDependencies": ["todos"] },
     "api": { "tags": [] },
     "data": { "tags": [] },
-    "ui": { "tags": [] }
+    "ui": { "tags": [] },
+    "administration-group-administration": { "tags": [] },
+    "administration-group-customer-data": { "tags": [] },
+    "administration-group--infrastructure": { "tags": [] },
+    "administration-group--ui-rest": { "tags": [] },
+    "administration-group-core-application-services": { "tags": [] },
+    "administration-group-core-domain": { "tags": [] },
+    "administration-group-core-domain-services": { "tags": [] }
   }
 }

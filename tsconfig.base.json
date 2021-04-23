@@ -16,7 +16,28 @@
     "baseUrl": ".",
     "paths": {
       "@myorg/data": ["libs/data/src/index.ts"],
-      "@myorg/ui": ["libs/ui/src/index.ts"]
+      "@myorg/ui": ["libs/ui/src/index.ts"],
+      "@administration-lib": [
+        "libs/administration-group/libs/administration/src/index.ts"
+      ],
+      "@customer-data-lib": [
+        "libs/administration-group/libs/customer-data/src/index.ts"
+      ],
+      "@administration-group-infrastructure-lib": [
+        "libs/administration-group/infrastructure/src/index.ts"
+      ],
+      "@administration-group-ui-rest-lib": [
+        "libs/administration-group/ui-rest/src/index.ts"
+      ],
+      "@myorg/administration-group/core/application-services": [
+        "libs/administration-group/core/application-services/src/index.ts"
+      ],
+      "@myorg/administration-group/core/domain": [
+        "libs/administration-group/core/domain/src/index.ts"
+      ],
+      "@myorg/administration-group/core/domain-services": [
+        "libs/administration-group/core/domain-services/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

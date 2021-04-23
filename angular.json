@@ -237,6 +237,169 @@
           }
         }
       }
+    },
+    "administration-group-administration": {
+      "root": "libs/administration-group/administration",
+      "sourceRoot": "libs/administration-group/administration/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group/administration/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/administration-group/administration"],
+          "options": {
+            "jestConfig": "libs/administration-group/administration/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group-customer-data": {
+      "root": "libs/administration-group/customer-data",
+      "sourceRoot": "libs/administration-group/customer-data/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group/customer-data/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/administration-group/customer-data"],
+          "options": {
+            "jestConfig": "libs/administration-group/customer-data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group--infrastructure": {
+      "root": "libs/administration-group//infrastructure",
+      "sourceRoot": "libs/administration-group/infrastructure/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group//infrastructure/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/administration-group/infrastructure"],
+          "options": {
+            "jestConfig": "libs/administration-group/infrastructure/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group--ui-rest": {
+      "root": "libs/administration-group//ui-rest",
+      "sourceRoot": "libs/administration-group/ui-rest/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/administration-group//ui-rest/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/administration-group/ui-rest"],
+          "options": {
+            "jestConfig": "libs/administration-group/ui-rest/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group-core-application-services": {
+      "root": "libs/administration-group/core/application-services",
+      "sourceRoot": "libs/administration-group/core/application-services/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group/core/application-services/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/administration-group/core/application-services"
+          ],
+          "options": {
+            "jestConfig": "libs/administration-group/core/application-services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group-core-domain": {
+      "root": "libs/administration-group/core/domain",
+      "sourceRoot": "libs/administration-group/core/domain/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group/core/domain/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/administration-group/core/domain"],
+          "options": {
+            "jestConfig": "libs/administration-group/core/domain/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "administration-group-core-domain-services": {
+      "root": "libs/administration-group/core/domain-services",
+      "sourceRoot": "libs/administration-group/core/domain-services/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/administration-group/core/domain-services/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/administration-group/core/domain-services"
+          ],
+          "options": {
+            "jestConfig": "libs/administration-group/core/domain-services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
